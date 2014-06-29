@@ -1,0 +1,4 @@
+{
+  "DB":"mysql",
+  "DB_CONFIG":"root:123@tcp(172.22.71.138:3306)/rcp?charset=utf8&loc=Local"
+}
