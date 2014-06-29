@@ -76,6 +76,8 @@ func Expected(actaual interface {},expected interface {}) bool{
      if actaual!=expected{
 		 result.PreTotalReport.PreTestFalseCaseNum++
 		 result.PreResult.CaseResult.Result="false"
+		 result.TotalResult=append(result.TotalResult,result.PreResult)
+		 result.TotalReported = append(result.TotalReported, result.PreTotalReport)//find the  false
 		 return false
 	 }
     result.PreTotalReport.PreTestTrueCaseNum++
