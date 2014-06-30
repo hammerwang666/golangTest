@@ -19,13 +19,36 @@ func main() {
 	}
 
 
-	//get loginUserMsg
-	err, userDate.UserMsg = datePrepare.SelectTeacher();
+	//get loginTeacher
+	err, userDate.LogTeacherMsg = datePrepare.SelectTeacher()
 	if err != nil {
-		log.Fatal("GetUserDate err", err.Error())
+		log.Fatal("GetTeacherDate err", err.Error())
 		return
 	}
-	//process 1
+	//get loginAdmin
+	err,userDate.LoginAdminMsg=datePrepare.SelectAdmin()
+	if err != nil {
+		log.Fatal("GetAdminDate err", err.Error())
+		return
+	}
+
+     //process1    admin  add  storeCat
+    addStoreCat:=process.AdminAddStoreCat()
+	if addStoreCat == false {
+		log.Println("process of add storeCat fail")
+		result.ShowResult()
+		//delete   test  date
+		err = datePrepare.DeleteTeacher()
+		if err != nil {
+			log.Println("delete date  fail", err)
+			return
+
+		}
+		return
+	}
+
+
+	//process 2
 	addShop := process.ProcessLoginAddShop()
 	if addShop == false {
 		log.Println("process of add shop fail")
@@ -40,20 +63,6 @@ func main() {
 		return
 	}
 
-	//process 2
-	loginPro := process.ProcessLogin()
-	if loginPro == false {
-		log.Println("process of login fail")
-		result.ShowResult()
-		//delete   test  date
-		err = datePrepare.DeleteTeacher()
-		if err != nil {
-			log.Println("delete date  fail", err)
-			return
-
-		}
-		return
-	}
 
 	//show the result
 	result.ShowResult()

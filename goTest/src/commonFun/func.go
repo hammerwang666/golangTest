@@ -9,6 +9,7 @@ import (
 	"io/ioutil"
     "encoding/json"
 	"result"
+	"commonParam"
 )
 
 type ResponseStruct struct {
@@ -18,8 +19,7 @@ type ResponseStruct struct {
 	Description string  `json:"description"`
 }
 
-var serviceUrl = "http://172.22.71.138:8082"
-
+var serviceUrl =commonParam.Url
 type Jar struct{
 	cookies[]*http.Cookie
 }
@@ -69,6 +69,7 @@ func HttpUrlFunc(method string, url  string , values url.Values) (error,*Respons
    return nil,response
 }
 
+//expect for   case
 func Expected(actaual interface {},expected interface {}) bool{
 	result.CaseNum++
 	result.PreResult.CaseResult.Number=result.CaseNum

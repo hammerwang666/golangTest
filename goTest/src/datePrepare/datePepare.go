@@ -16,14 +16,17 @@ func InnitData()error{
 	 conn,_=NewTestConn()
 	//userDate
 	userSql1:="INSERT INTO rcp_sys_user (TID,U_ACCOUNT, U_NAME, U_PASSWORD, U_CREATE_TIME, TYPE, IS_TRUE_USER, IS_SON_ACCOUNT,STATUS) VALUES(?,?,?,?,?,?,?,?,?)"
-
-	if _,err :=conn.Exec(userSql1,"4","teacherTest1", "teacher1", "123456", "2014-6-7 22:58:08", "teacher", "0", "0","NORMAL");err!=nil{
+	if _,err :=conn.Exec(userSql1,"1","admin", "admin", "123456", "2014-6-7 22:58:08", "admin", "0", "0","NORMAL");err!=nil{
+		log.Fatal("insertAdmin error", err.Error())
+		return err
+	}
+	if _,err :=conn.Exec(userSql1,"2","teacherTest1", "teacher1", "123456", "2014-6-7 22:58:08", "teacher", "0", "0","NORMAL");err!=nil{
 		log.Fatal("insertTeacher1 error", err.Error())
 		return err
 
 	}
 
-	if _,err :=conn.Exec(userSql1,"5","teacherTest2", "teacher2", "123456", "2014-6-7 22:58:08", "teacher", "0", "0","NORMAL");err!=nil{
+	if _,err :=conn.Exec(userSql1,"3","teacherTest2", "teacher2", "123456", "2014-6-7 22:58:08", "teacher", "0", "0","NORMAL");err!=nil{
 		log.Fatal("insertTeacher2 error", err.Error())
 		return err
 	}
@@ -34,7 +37,7 @@ func InnitData()error{
 
 }
 
-//获得用户
+//获得老师
 func SelectTeacher() (error,[]UserStruct){
 	conn,_=NewTestConn()
 	u_teacher:=UserStruct{}
@@ -59,14 +62,39 @@ func SelectTeacher() (error,[]UserStruct){
 
 
 }
+//获得管理员
+func SelectAdmin()(error,[]UserStruct){
+	conn,_=NewTestConn()
+	u_admin:=UserStruct{}
+	u_adminArr:=[]UserStruct{}
+	user1:="select u_account,u_password from rcp_sys_user where type=? "
+	rows,err:=conn.Query(user1,"admin")
+	if err!=nil{
 
+		log.Fatal("getAdminquery  error", err.Error())
+		return err,nil
+	}else if err==nil{
+		for  rows.Next(){
+			err=rows.Scan(&u_admin.userAccount,&u_admin.userPassword)
+			if err !=nil{
+				log.Fatal("GetTeacher Scan error", err.Error())
+				return err,nil
+			}
+			u_adminArr=append(u_adminArr,u_admin)
+		}
+	}
+	return  nil,u_adminArr
+
+
+}
 //删除用户
 func  DeleteTeacher()error{
 	conn,_=NewTestConn()
 	defer conn.Close()
-	deleteTeacher:="delete from rcp_sys_user where type='teacher'"
-	deleteStore:="delete from rcp_store where u_id>'3'  and  u_id<'6' "
-	deleteUserStore:="delete from rcp_user_store_competence where user_tid>'3'and user_tid<'6'"
+	deleteTeacher:="delete from rcp_sys_user where tid<'4'"
+	deleteStore:="delete from rcp_store where   u_id<'4' "
+	deleteUserStore:="delete from rcp_user_store_competence where user_tid<'6'"
+	deleteStoreCat:="delete from rcp_shopcategory"
 	if _, err := conn.Exec(deleteTeacher); err != nil {
 		log.Fatal("deleteTeacher error",err.Error())
 		return err
@@ -80,6 +108,13 @@ func  DeleteTeacher()error{
 		return err
 	}
 
+	if _,err:=conn.Exec(deleteStoreCat);err!=nil{
+		log.Fatal("delete  rcp_shopcategory error",err.Error())
+		return err
+	}
+
 
 	return nil
 }
+
+

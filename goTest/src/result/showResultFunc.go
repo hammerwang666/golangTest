@@ -95,7 +95,7 @@ func ShowResult() {
 					TotalReported[j].PreTestTotalCase=TotalReported[j].PreTestTotalCase/TotalReported[j].TotalTestPeople
 					TotalReported[j].PreTestTrueCaseNum=TotalReported[j].PreTestTrueCaseNum/TotalReported[j].TotalTestPeople
 					TotalReported[j].PreTestFalseCaseNum=TotalReported[j].PreTestFalseCaseNum/TotalReported[j].TotalTestPeople
-					fmt.Println("流程",TotalReported[j].ProcessNumber,":  共有\n",TotalReported[j].TotalTestPeople,"个测试人员",
+					fmt.Println("\n流程",TotalReported[j].ProcessNumber,":\n",TotalReported[j].TotalTestPeople,"个测试人员",
 						TotalReported[j].TotalTest,"个测试",TotalReported[j].PreTestTotalCase,"个测试用例",TotalReported[j].PreTestTrueCaseNum,"个成功",TotalReported[j].PreTestFalseCaseNum,"个失败")
 				}
 

@@ -7,6 +7,7 @@ import (
 	"log"
 	"userDate"
 	"result"
+	"storeCatTest"
 )
 
 func CreatShopTest() bool{
@@ -16,13 +17,19 @@ func CreatShopTest() bool{
 	result.TestNum++
 	result.PreResult.Test.Name="CreatShopTest"
 	result.PreResult.Test.Number=result.TestNum
-
+   //case 1
 	shopMsg := url.Values{}
 	shopMsg.Set("storeName", "老罗英文教育书店"+strconv.Itoa(userDate.UserNum))
-	shopMsg.Set("shopCategoryId", "1")
+	err,shopCatId :=storeCatTest.GetStoreCatId()
+	if err != nil{
+		log.Println("get storeCatId fail:",err)
+		return false
+	}else{
+		shopMsg.Set("shopCategoryId",strconv.Itoa(shopCatId))
+	}
+
 	shopMsg.Set("storeIntro", "test store")
 	err, date2 := commonFun.HttpUrlFunc("POST", "/register-store", shopMsg)
-
 	if err != nil {
 		log.Println(err)
 		return  false
@@ -33,6 +40,7 @@ func CreatShopTest() bool{
 	}
 
 
+	//case 2
 	shopMsg1 := url.Values{}
 	shopMsg1.Set("storeName", "")
 	shopMsg1.Set("shopCategoryId", "")
