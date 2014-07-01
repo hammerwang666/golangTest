@@ -10,19 +10,18 @@ import (
 
 func LoginTest() bool {
 	//增加测试结果,一个测试写一个
-	result.TestNum++
-	result.PreResult.Test.Name="LoginTest"
-	result.PreResult.Test.Number=result.TestNum
+	result.TesDetailResult("LoginTest")
 	//Login url
 	userParam := url.Values{}
 	userParam.Set("username",userDate.LoginUserAccounce)
 	userParam.Set("password", userDate.LoginUserPassword)
-	err, date1 := commonFun.HttpUrlFunc("POST", "/loginHandle1", userParam)
+	callbackDate:=&commonFun.ResponseStruct{}
+	err, _ := commonFun.HttpUrlFunc("POST", "/loginHandle1", userParam,callbackDate)
 	if err != nil {
 		log.Println("login err",err)
 		return   false
 	}
-	result := commonFun.Expected(date1.Code, 0)
+	result := commonFun.Expected(callbackDate.Code, 0)
 	if result == false {
 		log.Println("Expected login  fail ",result)
 		return  false

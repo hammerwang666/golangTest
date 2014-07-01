@@ -103,3 +103,9 @@ func ShowResult() {
 			}
 }
 
+func TesDetailResult(arg_testName  string){
+	//增加测试结果,一个测试写一个
+	TestNum++
+	PreResult.Test.Name=arg_testName
+	PreResult.Test.Number=TestNum
+}

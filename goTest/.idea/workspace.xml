@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01260f76-0853-416f-b031-916fbfe60285" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/commonParam/commParam.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/storeCatTest/storeCatTest.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/categoryTest/categoryTest.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/postTradeTest/productUtilTest.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shopTest/creatShopTest.go" afterPath="$PROJECT_DIR$/src/shopTest/creatShopTest.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/datePrepare/datePepare.go" afterPath="$PROJECT_DIR$/src/datePrepare/datePepare.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commonFun/func.go" afterPath="$PROJECT_DIR$/src/commonFun/func.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/loginTest/loginTest.go" afterPath="$PROJECT_DIR$/src/loginTest/loginTest.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/main.exe" afterPath="$PROJECT_DIR$/bin/main.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.go" afterPath="$PROJECT_DIR$/src/main.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/process/processMain.go" afterPath="$PROJECT_DIR$/src/process/processMain.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/result/showResultFunc.go" afterPath="$PROJECT_DIR$/src/result/showResultFunc.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/userDate/userDate.go" afterPath="$PROJECT_DIR$/src/userDate/userDate.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/storeCatTest/storeCatTest.go" afterPath="$PROJECT_DIR$/src/storeCatTest/storeCatTest.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="goTest.iws" />
@@ -75,47 +76,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.go">
+      <file leaf-file-name="categoryTest.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/categoryTest/categoryTest.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="2268">
-              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="514" max-vertical-offset="1728">
+              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="processMain.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/process/processMain.go">
+      <file leaf-file-name="loginTest.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/loginTest/loginTest.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-              <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1026">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.go" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.2372882" vertical-offset="486" max-vertical-offset="2025">
+              <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
               <folding>
-                <element signature="n#!!block;n#AddPreTestResult#0" expanded="false" />
-                <element signature="n#!!block;n#DeletePreTestResult#0" expanded="false" />
-                <element signature="n#!!block;n#AddPrePersonInfo#0" expanded="false" />
-                <element signature="n#!!block;n#AdminAddStoreCat#0" expanded="false" />
-                <element signature="n#!!block;n#ProcessLoginAddShop#0" expanded="false" />
+                <element signature="e#181#367#0" expanded="false" />
+                <element signature="e#464#655#0" expanded="false" />
+                <element signature="e#743#932#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userDate.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/userDate/userDate.go">
+      <file leaf-file-name="sql.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/Go/src/pkg/database/sql/sql.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="648">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="17254" max-vertical-offset="39798">
+              <caret line="645" column="35" selection-start-line="645" selection-start-column="35" selection-end-line="645" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="storeCatTest.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/storeCatTest/storeCatTest.go">
+      <file leaf-file-name="datePepare.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/datePrepare/datePepare.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2597" max-vertical-offset="3429">
+              <caret line="126" column="40" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
+              <folding>
+                <element signature="e#2692#2756#0" expanded="false" />
+                <element signature="e#2799#2868#0" expanded="false" />
+                <element signature="e#2915#2998#0" expanded="false" />
+                <element signature="e#3045#3120#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productUtilTest.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/postTradeTest/productUtilTest.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="1647">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -124,18 +148,28 @@
       <file leaf-file-name="creatShopTest.go" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shopTest/creatShopTest.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="591" max-vertical-offset="1836">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1836">
+              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="url.go" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/Go/src/pkg/net/url/url.go">
+      <file leaf-file-name="storeCatTest.go" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/storeCatTest/storeCatTest.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="13318" max-vertical-offset="18981">
-              <caret line="497" column="16" selection-start-line="497" selection-start-column="16" selection-end-line="497" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="537" max-vertical-offset="1593">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.24" vertical-offset="0" max-vertical-offset="243">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -144,26 +178,9 @@
       <file leaf-file-name="func.go" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/commonFun/func.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="638" max-vertical-offset="2079">
-              <caret line="36" column="52" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="52" />
-              <folding>
-                <element signature="n#!!block;n#SetCookies#0" expanded="false" />
-                <element signature="n#!!block;n#Cookies#0" expanded="false" />
-                <element signature="n#!!block;n#Expected#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datePepare.go" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/datePrepare/datePepare.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40261865" vertical-offset="1509" max-vertical-offset="2160">
-              <caret line="111" column="44" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
-              <folding>
-                <element signature="n#!!block;n#InnitData#0" expanded="false" />
-                <element signature="n#!!block;n#SelectAdmin#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="2592">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -207,19 +224,21 @@
         <option value="$PROJECT_DIR$/src/commonFun/cookieTest.go" />
         <option value="$PROJECT_DIR$/src/common/systermMsg.go" />
         <option value="$PROJECT_DIR$/src/process/processStruct.go" />
-        <option value="$PROJECT_DIR$/src/loginTest/loginTest.go" />
         <option value="$PROJECT_DIR$/src/datePrepare/conn.go" />
         <option value="$PROJECT_DIR$/src/result/resultDate.go" />
-        <option value="$PROJECT_DIR$/src/result/showResultFunc.go" />
         <option value="$PROJECT_DIR$/src/userDate/userDate.go" />
         <option value="$PROJECT_DIR$/config/config.json" />
         <option value="$PROJECT_DIR$/src/commonParam/commParam.go" />
-        <option value="$PROJECT_DIR$/src/commonFun/func.go" />
         <option value="$PROJECT_DIR$/src/storeCat/storeCatTest.go" />
+        <option value="$PROJECT_DIR$/src/result/showResultFunc.go" />
         <option value="$PROJECT_DIR$/src/process/processMain.go" />
-        <option value="$PROJECT_DIR$/src/datePrepare/datePepare.go" />
+        <option value="$PROJECT_DIR$/src/commonFun/func.go" />
+        <option value="$PROJECT_DIR$/src/loginTest/loginTest.go" />
         <option value="$PROJECT_DIR$/src/storeCatTest/storeCatTest.go" />
         <option value="$PROJECT_DIR$/src/shopTest/creatShopTest.go" />
+        <option value="$PROJECT_DIR$/src/categoryTest/categoryTest.go" />
+        <option value="$PROJECT_DIR$/src/postTradeTest/productUtilTest.go" />
+        <option value="$PROJECT_DIR$/src/datePrepare/datePepare.go" />
         <option value="$PROJECT_DIR$/src/main.go" />
       </list>
     </option>
@@ -275,8 +294,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,34 +336,14 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datePrepare" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goTest" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commonFun" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -420,27 +417,6 @@
       <module name="goTest" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <option name="name" value="main" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
-      <option name="GDB_PATH" value="gdb" />
-      <option name="STARTUP_COMMANDS" value="" />
-      <option name="autoStartGdb" value="true" />
-      <option name="debugBuilderArguments" value="-gcflags &quot;-N -I&quot;" />
-      <option name="scriptName" value="$PROJECT_DIR$/src/main.go" />
-      <option name="scriptArguments" value="" />
-      <option name="runBuilderArguments" value="" />
-      <option name="goBuildBeforeRun" value="true" />
-      <option name="goOutputDir" value="E:\gitProject\goTest\bin" />
-      <option name="workingDir" value="E:\gitProject\goTest" />
-      <option name="envVars" value="" />
-      <module name="goTest" />
-      <RunnerSettings RunnerId="GoApplicationRunner" />
-      <ConfigurationWrapper RunnerId="GoApplicationRunner" />
       <method />
     </configuration>
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -615,16 +591,36 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
+    <configuration default="false" name="main" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <option name="name" value="main" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <option name="GDB_PATH" value="gdb" />
+      <option name="STARTUP_COMMANDS" value="" />
+      <option name="autoStartGdb" value="true" />
+      <option name="debugBuilderArguments" value="-gcflags &quot;-N -I&quot;" />
+      <option name="scriptName" value="$PROJECT_DIR$/src/main.go" />
+      <option name="scriptArguments" value="" />
+      <option name="runBuilderArguments" value="" />
+      <option name="goBuildBeforeRun" value="true" />
+      <option name="goOutputDir" value="E:\gitProject\goTest\bin" />
+      <option name="workingDir" value="E:\gitProject\goTest" />
+      <option name="envVars" value="" />
+      <module name="goTest" />
+      <RunnerSettings RunnerId="GoApplicationRunner" />
+      <ConfigurationWrapper RunnerId="GoApplicationRunner" />
+      <method />
+    </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Go Test.gotest.Test_Division_1" />
-      <item index="1" class="java.lang.String" itemvalue="Go Test.gotest" />
-      <item index="2" class="java.lang.String" itemvalue="Go Application.main" />
+      <item index="0" class="java.lang.String" itemvalue="Go Application.main" />
+      <item index="1" class="java.lang.String" itemvalue="Go Test.gotest.Test_Division_1" />
+      <item index="2" class="java.lang.String" itemvalue="Go Test.gotest" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Go Application.main" />
-        <item index="1" class="java.lang.String" itemvalue="Go Test.gotest" />
-        <item index="2" class="java.lang.String" itemvalue="Go Test.gotest.Test_Division_1" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Go Test.gotest" />
+        <item index="1" class="java.lang.String" itemvalue="Go Test.gotest.Test_Division_1" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -669,23 +665,23 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7437582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7426752" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3375959" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Go" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5669701" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Go" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4165605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3979194" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58343947" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58224165" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25637183" sideWeight="0.42857143" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32738853" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295796" sideWeight="0.41787124" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25637183" sideWeight="0.66490066" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18471338" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25637183" sideWeight="0.56873316" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25605094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295796" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -757,7 +753,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="14" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -779,24 +775,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="1323">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Go/src/pkg/net/http/client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10420" max-vertical-offset="10827">
-          <caret line="353" column="5" selection-start-line="353" selection-start-column="5" selection-end-line="353" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.go">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="729" max-vertical-offset="1296">
           <caret line="27" column="50" selection-start-line="21" selection-start-column="8" selection-end-line="27" selection-end-column="50" />
-          <folding />
+          <folding>
+            <element signature="e#181#367#0" expanded="false" />
+            <element signature="e#464#655#0" expanded="false" />
+            <element signature="e#743#932#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -811,7 +796,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1053">
           <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding />
+          <folding>
+            <element signature="e#181#367#0" expanded="false" />
+            <element signature="e#464#655#0" expanded="false" />
+            <element signature="e#743#932#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -826,7 +815,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#181#367#0" expanded="false" />
+            <element signature="e#464#655#0" expanded="false" />
+            <element signature="e#743#932#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -834,7 +827,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#181#367#0" expanded="false" />
+            <element signature="e#464#655#0" expanded="false" />
+            <element signature="e#743#932#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -842,7 +839,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#181#367#0" expanded="false" />
+            <element signature="e#464#655#0" expanded="false" />
+            <element signature="e#743#932#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -857,7 +858,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#181#367#0" expanded="false" />
+            <element signature="e#464#655#0" expanded="false" />
+            <element signature="e#743#932#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -872,7 +877,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#181#367#0" expanded="false" />
+            <element signature="e#464#655#0" expanded="false" />
+            <element signature="e#743#932#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -887,7 +896,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#181#367#0" expanded="false" />
+            <element signature="e#464#655#0" expanded="false" />
+            <element signature="e#743#932#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -895,7 +908,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#181#367#0" expanded="false" />
+            <element signature="e#464#655#0" expanded="false" />
+            <element signature="e#743#932#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1042,53 +1059,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/result/showResultFunc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2056" max-vertical-offset="2997">
-          <caret line="97" column="35" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/result/resultDate.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5204918" vertical-offset="375" max-vertical-offset="1107">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/commonParam/commParam.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16413374" vertical-offset="0" max-vertical-offset="329">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19518073" vertical-offset="0" max-vertical-offset="415">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/loginTest/loginTest.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55227274" vertical-offset="135" max-vertical-offset="891">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="e#466#518#0" expanded="false" />
-            <element signature="e#584#650#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Go/src/pkg/database/sql/sql.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13981043" vertical-offset="11146" max-vertical-offset="39798">
-          <caret line="415" column="14" selection-start-line="415" selection-start-column="14" selection-end-line="415" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1096,7 +1070,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
           <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,48 +1081,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="2268">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/process/processMain.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!block;n#AddPreTestResult#0" expanded="false" />
-            <element signature="n#!!block;n#DeletePreTestResult#0" expanded="false" />
-            <element signature="n#!!block;n#AddPrePersonInfo#0" expanded="false" />
-            <element signature="n#!!block;n#AdminAddStoreCat#0" expanded="false" />
-            <element signature="n#!!block;n#ProcessLoginAddShop#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/userDate/userDate.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/storeCatTest/storeCatTest.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="243" max-vertical-offset="1620">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shopTest/creatShopTest.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="591" max-vertical-offset="1836">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1162,25 +1097,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/result/resultDate.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64830506" vertical-offset="0" max-vertical-offset="708">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/result/showResultFunc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38135594" vertical-offset="0" max-vertical-offset="708">
+          <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!block;n#ShowResult#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/process/processMain.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1703" max-vertical-offset="2673">
+          <caret line="119" column="34" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.24" vertical-offset="0" max-vertical-offset="243">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loginTest/loginTest.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1026">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storeCatTest/storeCatTest.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="537" max-vertical-offset="1593">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/commonFun/func.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1610" max-vertical-offset="2079">
-          <caret line="36" column="52" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="52" />
-          <folding>
-            <element signature="n#!!block;n#SetCookies#0" expanded="false" />
-            <element signature="n#!!block;n#Cookies#0" expanded="false" />
-            <element signature="n#!!block;n#Expected#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="2592">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Go/src/pkg/database/sql/sql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17254" max-vertical-offset="39798">
+          <caret line="645" column="35" selection-start-line="645" selection-start-column="35" selection-end-line="645" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/postTradeTest/productUtilTest.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="1647">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/categoryTest/categoryTest.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="514" max-vertical-offset="1728">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datePrepare/datePepare.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40261865" vertical-offset="1509" max-vertical-offset="2160">
-          <caret line="111" column="44" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2921" max-vertical-offset="3429">
+          <caret line="126" column="40" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
           <folding>
-            <element signature="n#!!block;n#InnitData#0" expanded="false" />
-            <element signature="n#!!block;n#SelectAdmin#0" expanded="false" />
+            <element signature="e#2692#2756#0" expanded="false" />
+            <element signature="e#2799#2868#0" expanded="false" />
+            <element signature="e#2915#2998#0" expanded="false" />
+            <element signature="e#3045#3120#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shopTest/creatShopTest.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1836">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2372882" vertical-offset="486" max-vertical-offset="2025">
+          <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+          <folding>
+            <element signature="e#181#367#0" expanded="false" />
+            <element signature="e#464#655#0" expanded="false" />
+            <element signature="e#743#932#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -33,14 +33,13 @@ func (jar *Jar) Cookies(u *url.URL) []*http.Cookie {
 
 var jar = new(Jar)
 var client = http.Client{nil, nil, jar}
-
-func HttpUrlFunc(method string, url  string , values url.Values) (error,*ResponseStruct){
+func HttpUrlFunc(method string, url  string , values url.Values, structType interface {}) (error,int){
 	url = serviceUrl+url
 	b := strings.NewReader(values.Encode())
 	req, err := http.NewRequest("POST", url, b)
 	if err != nil {
 		log.Fatal("http fail")
-		return err,nil
+		return err,-1
 	}
 	if "POST" == method {
 		req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
@@ -50,7 +49,7 @@ func HttpUrlFunc(method string, url  string , values url.Values) (error,*Respons
 	if err != nil {
 		log.Fatal("Fatal error ", err.Error())
 		os.Exit(0)
-		return err,nil
+		return err,-1
 	}
 //	cookies := res.Cookies()
 //	for _, cookie := range cookies {
@@ -63,10 +62,10 @@ func HttpUrlFunc(method string, url  string , values url.Values) (error,*Respons
 	if 0==len(resp_body){
 		log.Fatalln("Get The Worng Response:EmPTY")
 	}
-	var response *ResponseStruct = &ResponseStruct{}
+//	var response *ResponseStruct = &ResponseStruct{}
 
-	err= json.Unmarshal([]byte(resp_body), response)
-   return nil,response
+	err= json.Unmarshal([]byte(resp_body), &structType)
+   return nil,0
 }
 
 //expect for   case
@@ -86,5 +85,6 @@ func Expected(actaual interface {},expected interface {}) bool{
 	result.TotalResult=append(result.TotalResult,result.PreResult)
 	return true
 }
+
 
 

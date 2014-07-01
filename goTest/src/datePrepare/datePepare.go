@@ -88,13 +88,16 @@ func SelectAdmin()(error,[]UserStruct){
 
 }
 //删除用户
-func  DeleteTeacher()error{
+func  DeleteDate()error{
 	conn,_=NewTestConn()
 	defer conn.Close()
 	deleteTeacher:="delete from rcp_sys_user where tid<'4'"
 	deleteStore:="delete from rcp_store where   u_id<'4' "
 	deleteUserStore:="delete from rcp_user_store_competence where user_tid<'6'"
 	deleteStoreCat:="delete from rcp_shopcategory"
+	deletecategory:="delete from rcp_category"
+	deleteResorceNew:="delete from rcp_resource_new"
+	delete_r_cat_res:="delete from rcp_r_cat_res"
 	if _, err := conn.Exec(deleteTeacher); err != nil {
 		log.Fatal("deleteTeacher error",err.Error())
 		return err
@@ -112,8 +115,18 @@ func  DeleteTeacher()error{
 		log.Fatal("delete  rcp_shopcategory error",err.Error())
 		return err
 	}
-
-
+	if _,err:=conn.Exec(deletecategory);err!=nil{
+		log.Fatal("delete  rcp_category error",err.Error())
+		return err
+	}
+    if _,err:=conn.Exec(deleteResorceNew);err!=nil{
+		log.Fatal("delete  rcp_resource_new error",err.Error())
+		return err
+	}
+	if _,err:=conn.Exec(delete_r_cat_res);err!=nil{
+		log.Fatal("delete  rcp_r_cat_res error",err.Error())
+		return err
+	}
 	return nil
 }
 

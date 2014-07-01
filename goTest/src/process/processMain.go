@@ -8,6 +8,8 @@ import (
 	"result"
 	"reflect"
 	"storeCatTest"
+	"categoryTest"
+	"postTradeTest"
 )
 //add  in  every process  begin
 func AddPreTestResult(arg_processName string){
@@ -39,7 +41,7 @@ func  AddPrePersonInfo(arg_personNum  int){
 }
 
 
-//process  admin add storeCat
+//process  admin add storeCat,category
  func AdminAddStoreCat() bool{
 	 AddPreTestResult("AdminAddStoreCat")
 	 for k,v:=range userDate.LoginAdminMsg{
@@ -64,6 +66,16 @@ func  AddPrePersonInfo(arg_personNum  int){
 			 return false
 		 }
 		 result.CaseNum = 0  //每个test之后都要将CaseNum归零一次
+
+		 //测试添加商品类型
+		 result.PreTotalReport.TotalTest++//每增加一个test要增加一个
+		 addCategory:=categoryTest.AddCategoryTest()
+         if addCategory==false{
+			 log.Println("add  addCategory false")
+			 return false
+		 }
+		 result.CaseNum = 0  //每个test之后都要将CaseNum归零一次
+
 		 //在最后要把test归零
 		 result.TestNum=0
 	 }
@@ -94,13 +106,23 @@ func ProcessLoginAddShop() bool{
 		  result.CaseNum = 0  //每个test之后都要将CaseNum归零一次
 
 		  //测试添加商店
-		  result.PreTotalReport.TotalTest++//每增加一个test要增加一个
-		  addStore := shopTest.CreatShopTest();
+		  result.PreTotalReport.TotalTest++
+		  addStore := shopTest.CreatShopTest()
 		  if addStore == false {
 			  log.Println("add  false")
 			  return false
 		  }
-		  result.CaseNum = 0//每个test之后都要将CaseNum归零一次
+		  result.CaseNum = 0
+
+
+		  //添加商品
+		  result.PreTotalReport.TotalTest++
+		  addResource:=postTradeTest.ProductReleaseTest()
+		  if addResource==false{
+			  log.Println("addResource fail")
+			  return false
+		  }
+		  result.CaseNum = 0
 
 		  //在最后要把test归零
 		  result.TestNum=0
